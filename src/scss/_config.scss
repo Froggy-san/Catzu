@@ -1,0 +1,154 @@
+/*************************************************************** SCROLL BAR*******************************************/
+
+::-webkit-scrollbar {
+    width: .6em;
+  }
+  
+  
+  ::-webkit-scrollbar-track {
+    background-color: var(--color-bright);
+    border-radius: 10px;
+    margin-block: 10px;
+  }
+  
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    /* background-color: #ff7f50; */
+   
+    background: linear-gradient(238deg,var(--main-color) , var(--p-color)); ;
+    /* border: 1px solid; */
+    /* box-shadow: 0px 0px 15px 0px var(--main-color);*/
+  
+  
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(238deg, var(--p-color), var(--main-color)); ;
+  }
+  
+  
+  /************ for firefox ***************/
+  
+  
+  @supports (scrollbar-color: pink blue) {
+    * {
+      scrollbar-color: var(--p-color) var(--color-bright);
+      scrollbar-width: thin;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /********************************************************** END SCROLL BAR **********************************************/
+  
+  /*start of variables*/
+  :root {
+    --main-color: coral;
+    --second-color: #380b16;
+    --thrid-color: #c00010e6;
+    --four-color: #682f5abd;
+    --p-color: #ff7f506e;
+    --color-bright: #6a192d;
+  }
+  
+  /*end of variables*/
+  
+  /* START OF GLOBAL VALUES*/
+  
+  * {
+    --webkit-box-sizing: border-box;
+    --moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  *::selection {
+    background-color: burlywood;
+    color: crimson;
+  }
+  
+  img , video {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  body {
+    /* cursor: url("../images/oca-gris.svg"), auto; */
+    font-family: 'Urbanist', sans-serif;
+    // font-family: "Open Sans", sans-serif;
+    // font-family: "Work Sans", sans-serif;
+    // font-family: "Nabla", cursive;
+    // font-family: "Open Sans", sans-serif;
+    // font-family: "Work Sans", sans-serif;
+    // font-family: "Nabla", cursive;
+    // font-family: "Open Sans", sans-serif;
+    // font-family: "Rouge Script", cursive;
+    // font-family: "Work Sans", sans-serif;
+  
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+
+
+
+
+  @media (min-width: 768px) {
+    .container {
+      max-width: 750px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+     max-width: 970px;
+    }
+   
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1188px;
+    }
+  }
+
+  
+  @media (min-width: 1350px) {
+        .container{
+            max-width: 1350px;
+        }
+  }
